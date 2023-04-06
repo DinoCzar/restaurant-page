@@ -1,1 +1,1 @@
-(()=>{console.log("Hello Jupiter");const e=document.getElementById("content"),t=document.createElement("div");t.classList.add("test"),t.textContent="Hello, Mars!",e.appendChild(t)})();
+(()=>{const t=document.getElementById("content"),e=document.createElement("div");e.classList.add("test"),e.textContent="Hello, Mars!",t.appendChild(e);const n=document.createElement("div");n.classList.add("test"),n.textContent="Hello, Saturn!",t.appendChild(n)})();

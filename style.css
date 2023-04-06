@@ -1,10 +1,95 @@
-#name {
-    color: green;
-    text-align: center;
-  }
-
 .test {
-  background-color: red;
-  width: 50px;
-  height: 50px;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+}
+
+:root {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+body,
+#content,
+#header,
+#home-div,
+#menu-div,
+#contact-div {
+	display: grid;
+}
+
+body,
+#content,
+#home-div,
+#menu-div,
+#contact-div,
+#name,
+#image-container,
+#description {
+  justify-items: center;
+  align-items: center;
+}
+
+body {
+	width: 300px;
+  border: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#content {
+  grid-template-rows: 40px 100px 200px 260px;
+}
+
+
+#header {
+	grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-row-start: 1;
+}
+
+#home-div {
+	grid-column-start: 1;
+}
+
+#menu-div {
+	grid-column-start: 2;
+}
+
+#contact-div {
+	grid-column-start: 3;
+}
+
+.button {
+  width: 75px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+}
+
+#name {
+grid-row-start: 2;
+font-size: 30px;
+}
+
+#image-container {
+  grid-row-start: 3;
+  width: 250px;
+  height: 200px;
+  border: solid;
+  text-align: center;
+}
+
+#description {
+  grid-row-start: 4;
+  padding: 30px;
+  text-align: center;
 }

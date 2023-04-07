@@ -1,3 +1,9 @@
+function populateHome() {
+    return console.log('Hello World');
+}
+
+populateHome();
+
 const content = document.getElementById('content');
 
 const header = document.createElement('div');

@@ -1,4 +1,4 @@
-.test {
+#test {
 	background-color: blue;
 	width: 50px;
 	height: 50px;
@@ -23,7 +23,7 @@ body,
 #home-div,
 #menu-div,
 #contact-div,
-#name,
+#restaurant-name,
 #image-container,
 #description {
   justify-items: center;
@@ -75,7 +75,7 @@ body {
   font-size: 14px;
 }
 
-#name {
+#restaurant-name {
 grid-row-start: 2;
 font-size: 30px;
 }

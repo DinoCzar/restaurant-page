@@ -1,15 +1,5 @@
 const content = document.getElementById('content');
 
-const test = document.createElement('div');
-test.setAttribute('id', 'test');
-test.textContent = 'Hello, Mars!';
-content.appendChild(test);
-
-const yes = document.createElement('div');
-yes.classList.add('test');
-yes.textContent = 'Hello, Saturn!';
-content.appendChild(yes);
-
 const header = document.createElement('div');
 header.setAttribute('id', 'header');
 content.appendChild(header);

@@ -1,8 +1,13 @@
 import { remove } from 'lodash';
 import populateHome from './home';
+import populateMenu from './menu';
+import populateContact from './contact';
+
+const loadHome = populateHome();
+const loadMenu = populateMenu();
+const loadContact = populateContact();
 
 function populateHeader() {
-	const loadHome = populateHome();
 
 	const content = document.getElementById('content');
 
@@ -28,6 +33,8 @@ function populateHeader() {
 	homeDiv.appendChild(home);
 	home.textContent = 'Home';
 	home.addEventListener('click', (e) => {
+        loadMenu.remove();
+        loadContact.remove();
 		content.appendChild(loadHome);
 	});
 
@@ -38,6 +45,8 @@ function populateHeader() {
 	menu.textContent = 'Menu';
 	menu.addEventListener('click', (e) => {
 		loadHome.remove();
+        loadContact.remove();
+        content.appendChild(loadMenu);
 	});
 
 	const contact = document.createElement('button');
@@ -47,6 +56,8 @@ function populateHeader() {
 	contact.textContent = 'Contact';
 	contact.addEventListener('click', (e) => {
 		loadHome.remove();
+        loadMenu.remove();
+        content.appendChild(loadContact);
 	});
 }
 

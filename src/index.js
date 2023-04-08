@@ -8,7 +8,6 @@ const loadMenu = populateMenu();
 const loadContact = populateContact();
 
 function populateHeader() {
-
 	const content = document.getElementById('content');
 
 	const header = document.createElement('div');
@@ -33,8 +32,8 @@ function populateHeader() {
 	homeDiv.appendChild(home);
 	home.textContent = 'Home';
 	home.addEventListener('click', (e) => {
-        loadMenu.remove();
-        loadContact.remove();
+		loadMenu.remove();
+		loadContact.remove();
 		content.appendChild(loadHome);
 	});
 
@@ -45,8 +44,8 @@ function populateHeader() {
 	menu.textContent = 'Menu';
 	menu.addEventListener('click', (e) => {
 		loadHome.remove();
-        loadContact.remove();
-        content.appendChild(loadMenu);
+		loadContact.remove();
+		content.appendChild(loadMenu);
 	});
 
 	const contact = document.createElement('button');
@@ -56,8 +55,8 @@ function populateHeader() {
 	contact.textContent = 'Contact';
 	contact.addEventListener('click', (e) => {
 		loadHome.remove();
-        loadMenu.remove();
-        content.appendChild(loadContact);
+		loadMenu.remove();
+		content.appendChild(loadContact);
 	});
 }
 

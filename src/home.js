@@ -12,15 +12,15 @@ function populateHome() {
 	imageContainer.setAttribute('id', 'image-container');
 	homePage.appendChild(imageContainer);
 
-    const homeImage = document.createElement('img');
-	homeImage.src = 'nasi-goreng.jpg'
-    imageContainer.appendChild(homeImage);
+	const homeImage = document.createElement('img');
+	homeImage.src = 'nasi-goreng.jpg';
+	imageContainer.appendChild(homeImage);
 
 	const description = document.createElement('div');
 	description.setAttribute('id', 'description');
 	homePage.appendChild(description);
 	description.textContent =
-		'We are an indonesian restuarant that has been in business since 2001. We pride ourselves in serving the most authentic and delicious creations from our home town, Denpasar, Bali. We always cook with love, and are excited to share some of our unique spices with you!';
+		'We are an indonesian restaurant that has been in business since 2001. We pride ourselves in serving the most authentic and delicious creations from our home town, Denpasar, Bali. We always cook with love, and are excited to share some of our unique spices with you!';
 	return homePage;
 }
 

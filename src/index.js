@@ -2,9 +2,7 @@ import { remove } from 'lodash';
 import populateHome from './home';
 
 function populateHeader() {
-
-    const loadHomeTest = populateHome();
-    console.log(loadHomeTest);
+	const loadHome = populateHome();
 
 	const content = document.getElementById('content');
 
@@ -30,7 +28,7 @@ function populateHeader() {
 	homeDiv.appendChild(home);
 	home.textContent = 'Home';
 	home.addEventListener('click', (e) => {
-		content.appendChild(loadHomeTest);
+		content.appendChild(loadHome);
 	});
 
 	const menu = document.createElement('button');
@@ -39,7 +37,7 @@ function populateHeader() {
 	menuDiv.appendChild(menu);
 	menu.textContent = 'Menu';
 	menu.addEventListener('click', (e) => {
-		loadHomeTest.remove();
+		loadHome.remove();
 	});
 
 	const contact = document.createElement('button');
@@ -48,12 +46,8 @@ function populateHeader() {
 	contactDiv.appendChild(contact);
 	contact.textContent = 'Contact';
 	contact.addEventListener('click', (e) => {
-		description.remove();
+		loadHome.remove();
 	});
 }
 
-function populateWebsite() {
-	populateHeader();
-}
-
-populateWebsite();
+populateHeader();

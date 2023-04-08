@@ -92,6 +92,10 @@ body {
 	text-align: center;
 }
 
+#home-image {
+	width: 50px;
+}
+
 #description {
 	grid-row-start: 3;
 	padding: 30px;

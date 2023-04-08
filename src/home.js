@@ -11,7 +11,10 @@ function populateHome() {
 	const imageContainer = document.createElement('div');
 	imageContainer.setAttribute('id', 'image-container');
 	homePage.appendChild(imageContainer);
-	imageContainer.textContent = 'image here';
+
+    const homeImage = document.createElement('img');
+	homeImage.src = 'nasi-goreng.jpg'
+    imageContainer.appendChild(homeImage);
 
 	const description = document.createElement('div');
 	description.setAttribute('id', 'description');

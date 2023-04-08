@@ -5,6 +5,9 @@
 
 body,
 #content,
+#home-page,
+#menu-page,
+#contact-page,
 #header,
 #home-div,
 #menu-div,
@@ -14,6 +17,9 @@ body,
 
 body,
 #content,
+#home-page,
+#menu-page,
+#contact-page,
 #home-div,
 #menu-div,
 #contact-div,
@@ -33,7 +39,7 @@ body {
 }
 
 #content {
-	grid-template-rows: 40px 100px 200px 260px;
+	grid-template-rows: 40px 560px;
 }
 
 #header {
@@ -43,6 +49,11 @@ body {
 	justify-items: center;
 	align-items: center;
 	grid-row-start: 1;
+}
+
+#home-page {
+  grid-template-rows: 100px 200px 260px;
+  grid-row-start: 2;
 }
 
 #home-div {
@@ -69,12 +80,12 @@ body {
 }
 
 #restaurant-name {
-	grid-row-start: 2;
+	grid-row-start: 1;
 	font-size: 30px;
 }
 
 #image-container {
-	grid-row-start: 3;
+	grid-row-start: 2;
 	width: 250px;
 	height: 200px;
 	border: solid;
@@ -82,7 +93,7 @@ body {
 }
 
 #description {
-	grid-row-start: 4;
+	grid-row-start: 3;
 	padding: 30px;
 	text-align: center;
 }

@@ -21,8 +21,4 @@ function populateHome() {
 	return homePage;
 }
 
-function loadHome() {
-    return populateHome();
-} 
-
-export default loadHome;
+export default populateHome;

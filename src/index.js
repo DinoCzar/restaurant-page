@@ -1,9 +1,11 @@
 import { remove } from 'lodash';
-import loadHome from './home';
+import populateHome from './home';
 
 function populateHeader() {
 
-    const loadHomeTest = loadHome();
+    const loadHomeTest = populateHome();
+    console.log(loadHomeTest);
+
 	const content = document.getElementById('content');
 
 	const header = document.createElement('div');
@@ -28,7 +30,7 @@ function populateHeader() {
 	homeDiv.appendChild(home);
 	home.textContent = 'Home';
 	home.addEventListener('click', (e) => {
-		console.log(homePageDiv);
+		content.appendChild(loadHomeTest);
 	});
 
 	const menu = document.createElement('button');

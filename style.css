@@ -92,8 +92,8 @@ body {
 	text-align: center;
 }
 
-#home-image {
-	width: 50px;
+img {
+	width: 100%
 }
 
 #description {

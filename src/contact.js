@@ -1,7 +1,6 @@
 function populateContact() {
 	const contactPage = document.createElement('div');
 	contactPage.setAttribute('id', 'contact-page');
-	content.appendChild(contactPage);
 
 	const contactInfo = document.createElement('div');
 	contactInfo.setAttribute('id', 'contact-info');

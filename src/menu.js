@@ -1,7 +1,6 @@
 function populateMenu() {
 	const menuPage = document.createElement('div');
 	menuPage.setAttribute('id', 'menu-page');
-	content.appendChild(menuPage);
 
 	const menuItem = document.createElement('div');
 	menuItem.setAttribute('id', 'menu-item');

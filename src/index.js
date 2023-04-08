@@ -1,6 +1,7 @@
 import populateHome from './home';
 import populateMenu from './menu';
 import populateContact from './contact';
+import { remove } from 'lodash';
 
 const loadHome = populateHome();
 const loadMenu = populateMenu();

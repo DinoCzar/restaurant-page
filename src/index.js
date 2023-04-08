@@ -1,4 +1,3 @@
-import { remove } from 'lodash';
 import populateHome from './home';
 import populateMenu from './menu';
 import populateContact from './contact';

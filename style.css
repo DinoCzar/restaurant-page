@@ -1,3 +1,5 @@
+/* global styling */
+
 :root {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,7 +13,10 @@ body,
 #header,
 #home-div,
 #menu-div,
-#contact-div {
+#contact-div,
+#menu-item,
+#item-title,
+#item-details {
 	display: grid;
 }
 
@@ -34,6 +39,8 @@ body {
 	width: 300px;
 }
 
+/* index.js styling */
+
 #content {
 	padding: 20px;
 	grid-template-rows: 40px 500px;
@@ -47,11 +54,6 @@ body {
 	justify-items: center;
 	align-items: center;
 	grid-row-start: 1;
-}
-
-#home-page {
-	grid-template-rows: 100px 150px 250px;
-	grid-row-start: 2;
 }
 
 #home-div {
@@ -77,6 +79,13 @@ body {
 	font-size: 14px;
 }
 
+/* home.js styling */
+
+#home-page {
+	grid-template-rows: 100px 150px 250px;
+	grid-row-start: 2;
+}
+
 #restaurant-name {
 	grid-row-start: 1;
 	font-size: 30px;
@@ -99,3 +108,33 @@ body {
 	padding: 30px;
 	text-align: center;
 }
+
+/* menu.js styling */
+
+#menu-page {
+	justify-items: center;
+	align-content: start;
+	height: 100%;
+	width: 100%;
+}
+
+#menu-item {
+	margin: 20px;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+	width: 100%;
+}
+
+#item-title {
+	grid-row-start: 1;
+	text-align: center;
+	font-size: 16px;
+}
+
+#item-details {
+	grid-row-start: 2;
+	font-size: 12px;
+	text-align: left;
+}
+
+/* contact.js styling */

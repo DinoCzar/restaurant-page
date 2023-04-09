@@ -116,25 +116,29 @@ body {
 	align-content: start;
 	height: 100%;
 	width: 100%;
+	padding-top: 30px;
 }
 
 #menu-item {
-	margin: 20px;
 	grid-template-rows: 1fr 1fr;
-	gap: 10px;
 	width: 100%;
+	grid-template-rows: 25px 75px;
 }
 
 #item-title {
 	grid-row-start: 1;
 	text-align: center;
 	font-size: 16px;
+	height: 20px;
+	grid-row-start: 1;
 }
 
 #item-details {
 	grid-row-start: 2;
-	font-size: 12px;
+	font-size: 10px;
 	text-align: left;
+	height: 50px;
+	grid-row-start: 2;
 }
 
 /* contact.js styling */
